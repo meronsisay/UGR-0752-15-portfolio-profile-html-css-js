@@ -1,56 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>About</title>
   </head>
   <body>
     <!-- Header Content-->
-    <header>
-      <nav>
-        <div> <img src="../images/logo1.png" alt="logo" ></div>
-        <ul>
+    <header class="about-header">
+      <nav class="nav_bar">
+        <div class="logo">
+          <img src="../images/logo1.png" alt="logo" />
+          <div class="gmail">sisaymeron0@gmail.com</div>
+        </div>
+        <div class="menu2">
+           <img src="../images/menu2.png" alt="menu">
+        </div>
+       
+        <ul class="nav_links" id="links">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About me</a></li>
-          <li><a href="./portfolio.html">Portfilo</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="./interest.html">Interests</a></li>
           <li><a href="./adventure.html">Adventure</a></li>
         </ul>
       </nav>
+      <div class="sub-header">
+        <h2>About</h2>
+        <div>
+          <span>
+            <a href="./home.html">Home</a>->
+            <span>About</span>
+          </span>
+        </div>
+      </div>
     </header>
     <!-- about section -->
-
-    <section>
-      <h2>About</h2>
-      <div>
-        <span>
-          <a href="./home.html">Home</a>->
-          <span>About</span>
-        </span>
-      </div>
-    </section>
-
-    <main>
-      <div>
-        <p>
-          Hello! I'm Meron Sisay, a software engineering student with a passion
-          for learning, improving, and creating impactful digital solutions.
-          Currently, I'm studying at Addis Ababa University, where I am building
-          a strong foundation in programming, web development, and user
-          experience design.
-        </p>
-      </div>
+    <main class="about__container">
       <!-- Education section-->
-      <section>
+      <section class="education__container">
         <h3>Education</h3>
-        <table>
+        <table class="tablesm">
+          <tr>
+            <td>
+              <p class="year">2015 - 2022</p>
+              <p>Imperial Academy</p>
+              <p>High school deploma</p>
+              <p>Graduated with honors in science and mathematics.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="year">2023 - Present</p>
+              <p>AAU University</p>
+              <p>Bachelor of Science in Software Engineering</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="year">Summer 2023-2024</p>
+              <p>Evangadi Tech</p>
+              <p>certifications on full-stack web development</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="year">2024-present</p>
+              <p>certifications on full-stack web development</p>
+            </td>
+          </tr>
+        </table>
+        <table class="tablelg">
           <thead>
             <tr>
               <th>Year</th>
-              <th>Institution/Company</th>
-              <th>Degree/Role</th>
-              <th>Details</th>
+              <th>Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2015 - 2022</td>
+              <td>
+                Imperial Academy<br />
+                High school diploma
+              </td>
+            </tr>
+            <tr>
+              <td>2023 - Present</td>
+              <td>
+                AAU University<br />
+                Bachelor of Science in Software Engineering
+              </td>
+            </tr>
+            <tr>
+              <td>2024 - Present</td>
+              <td>
+                Evangadi Tech<br />
+                Certifications on full-stack web development
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Institution</th>
+             
             </tr>
           </thead>
           <tbody>
@@ -73,42 +135,29 @@
               <td>2023 - Present</td>
               <td>AAU University</td>
               <td>Bachelor of Science in Software Engineering</td>
-              <td>
-                Focused on software development, data structures, and covers
-                many software-related concepts.
-              </td>
+             
             </tr>
             <tr>
               <td>Summer 2024-present</td>
               <td>Evangadi Tech</td>
               <td>certifications on full-stack web development</td>
-              <td>
-                Focused on mern full-stack development like express,node,react
-                course with a very enthusiastic teachers and students that are
-                taking the course with me.
-              </td>
+             
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </section>
       <!-- plans section -->
-      <section>
+      <section class="plan__section">
         <h3>Plans</h3>
         <div>
           <ol>
             <li>
               I plan to pursue further education in areas like artificial
-              intelligence, machine learning, or cybersecurity to expand my
-              expertise.
+              intelligence, machine learning. Earning certifications in cloud
+              computing to enhance my skill set and open more opportunities.
             </li>
-            <li>
-              Earning certifications in cloud computing and data science to
-              enhance my skill set and open more opportunities.
-            </li>
-            <li>
-              My long-term goal is to become a lead software engineer or project
-              manager, to lead teams in creating efficient and user-friendly applications.
-            </li>
+
+         
             <li>
               I will keep learning new programming languages, frameworks, and
               technologies to stay up-to-date and versatile in the ever-changing
@@ -118,24 +167,25 @@
         </div>
       </section>
     </main>
-     <footer>
-      <div>
+    <footer>
+      <div class="footer__container">
         <div class="footer-logo">
-          <img src="../images/logo1.png" alt="My Logo" >
+          <img src="../images/logo1.png" alt="My Logo" />
         </div>
         <nav aria-label="Footer Navigation">
           <ul>
             <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About me</a></li>
+
             <li><a href="./portfolio.html">Portfolio</a></li>
             <li><a href="./interest.html">Interests</a></li>
             <li><a href="./adventure.html">Adventure</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Meron Sisay. All Rights Reserved.</p>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Meron Sisay. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
+       <script src="./js/script.js"></script>
   </body>
 </html>

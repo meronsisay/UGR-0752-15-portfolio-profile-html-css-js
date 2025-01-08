@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>My Portfilo</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div><img src="../images/logo1.png" alt="My Portfolio Logo" ></div>
-        <ul>
+    <!-- header section -->
+    <header class="about-header">
+      <nav class="nav_bar">
+        <div class="logo">
+          <img src="../images/logo1.png" alt="logo" />
+          <div class="gmail">sisaymeron0@gmail.com</div>
+        </div>
+        <div class="menu2"><img  src="../images/menu2.png" alt="menu">
+      </div>
+        <ul class="nav_links" id="links">
           <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">About Me</a></li>
+          <li><a href="./about.html">About</a></li>
           <li><a href="./portfolio.html">Portfolio</a></li>
           <li><a href="./interest.html">Interests</a></li>
           <li><a href="./adventure.html">Adventure</a></li>
         </ul>
       </nav>
-    </header>
-    <div>
-      <h2>Portfolio</h2>
-      <div>
-        <span>
-          <a href="./home.html">Home</a>->
-          <span>Portfolio</span>
-        </span>
+      <div class="sub-header">
+        <h2>Portfolio</h2>
+        <div>
+          <span>
+            <a href="./home.html">Home</a>->
+            <span>Portfolio</span>
+          </span>
+        </div>
       </div>
-    </div>
-    <main class="portifolio">
-      <div>
+    </header>
+    <!-- portfolio section -->
+    <main class="portfolio">
+      <div class="intro">
         <h3>My works</h3>
         <p>
           Each project in my portfolio represents a step forward in my journey
@@ -40,107 +55,121 @@
 
       <div class="myWorks">
         <article>
-          
+          <a href="#">
             <img
-              src="../images/portifolio-image/portifolio-1.jpg"
+              src="../images/portifolio-image/puppy-lovers-page-design.jpg"
               alt="Puppy Page Project"
-            >
-          <div>
-            <h4>Puppy Page Project</h4>
-            <p>
-              My first web page built with HTML and CSS. I explored how HTML
-              tags and CSS selectors work together to create a static page.
-            </p>
-          </div>
+            />
+            <div>
+              <h4>Puppy Page Project</h4>
+              <p>
+                My first web page built with HTML and CSS. I explored how HTML
+                tags and CSS selectors work together to create a static page.
+              </p>
+            </div>
+          </a>
         </article>
         <article>
-         
+          <a href="https://dulcet-strudel-c6e841.netlify.app">
+            <img src="../images/portifolio-image/apple.png" alt="portfolio-2" />
+
+            <div>
+              <h4>Apple home page</h4>
+              <p>
+                I recreated apple's home page with only html and css further
+                enhancing my knowledge in html and css.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
             <img
-              src="../images/portifolio-image/portifolio2.jpg"
-              alt="portfolio-2"
-            >
-            
-         
+              src="../images/portifolio-image/full screen view.png"
+              alt="bootstrap project"
+            />
 
-          <div>
-            <h4>Apple home page</h4>
-            <p>
-              I recreated apple's home page with only html and css further
-              enhancing my knowledge in html and css.
-            </p>
-          </div>
+            <div>
+              <h4>bootstrap project</h4>
+              <p>
+                to develop myself in web development I build the followimg page
+                using only bootstrap features without using any custom css.
+              </p>
+            </div>
+          </a>
         </article>
 
-        <article>
-          
-            <img
-              src="../images/portifolio-image/portifolio3.png"
-              alt="project3"
-            >
-           
-          <div>
-            <h4>bootstrap project</h4>
-            <p>
-              to develop myself in web development I build the followimg page
-              using only bootstrap features without using any custom css.
-            </p>
-          </div>
-        </article>
-
-        <article>
-         
+        <article class="d_none">
+          <a href="#">
             <img
               src="../images/portifolio-image/portifolio4.jpg"
               alt="portfolio-4"
-            >
-         
+            />
 
-          <div>
-            <h4>sample API integration</h4>
-            <p>
-              I tried to retrieve product items which are used for trial from
-              https://fakestoreapi.com and integrate it to my page.
-            </p>
-          </div>
+            <div>
+              <h4>sample API integration</h4>
+              <p>
+                I tried to retrieve product items which are used for trial from
+                https://fakestoreapi.com and integrate it to my page.
+              </p>
+            </div>
+          </a>
         </article>
         <article>
-         
+          <a href="https://meronsis-netfilx-clone-project.netlify.app/">
             <img
               src="../images/portifolio-image/Netflix_clone.png"
               alt="Netflix_clone"
-            >
-           
-           
-       
+            />
 
-          <div>
-            <h4>Netflix_clone Project</h4>
-            <p>
-              Trying to recreate Netflix website by using react, The movie api
-              and and other tools that I have learned into one place.
-            </p>
-          </div>
+            <div>
+              <h4>Netflix_clone Project</h4>
+              <p>
+                Trying to recreate Netflix website by using react, The movie api
+                and and other tools that I have learned into one place.
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="d_none">
+          <a href="https://meronsis-amazon-clone.netlify.app/">
+            <img
+              src="../images/portifolio-image/portifolio5.png"
+              alt="Amazon_clone"
+            />
+
+            <div>
+              <h4>Amazon_clone Project</h4>
+              <p>
+                Trying to recreate Amazon website by using react, by adding a
+                bit of backend and other tools that I have learned into one
+                place.
+              </p>
+            </div>
+          </a>
         </article>
       </div>
     </main>
-     <footer>
-      <div>
+    <footer>
+      <div class="footer__container">
         <div class="footer-logo">
-          <img src="../images/logo1.png" alt="My Logo" >
+          <img src="../images/logo1.png" alt="My Logo" />
         </div>
         <nav aria-label="Footer Navigation">
           <ul>
             <li><a href="./home.html">Home</a></li>
-            <li><a href="./about.html">About me</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
+
+            <li><a href="./portfolio.html">About</a></li>
             <li><a href="./interest.html">Interests</a></li>
             <li><a href="./adventure.html">Adventure</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Meron Sisay. All Rights Reserved.</p>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Meron Sisay. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
